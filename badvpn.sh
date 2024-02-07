@@ -5,7 +5,7 @@ j="\033[0;33m"
 function lane() {
 echo -e "${y}────────────────────────────────────────────${exitsc}"
 }
-url_izin="https://raw.githubusercontent.com/zhets/izinsc/main/ip"
+url_izin="https://raw.githubusercontent.com/Daffastorevps/Script/master/ip"
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
@@ -23,14 +23,13 @@ echo -e "   ${j}Your VPS${exitsc} $ipsaya ${j}Has been Banned${exitsc}"
 echo -e "     ${j}Buy access permissions for scripts${exitsc}"
 echo -e "             ${j}Contact Admin :${exitsc}"
 echo -e "      \033[0;36mWhatsapp${exitsc} wa.me/6285935195701"
-echo -e "      \033[0;36mTelegram${exitsc} t.me/xdxl_store"
 lane
 exit
 fi
 }
 checking_sc
 
-REPO="https://raw.githubusercontent.com/zhets/zhets/ScriptAutoInstall-xdxl/main/"
+REPO="https://raw.githubusercontent.com/zhetsai/ScriptAutoInstall-xdxl/master/"
 mkdir -p /usr/local/xdxl/
 wget -q -O /usr/local/xdxl/badvpn-udpgpw "${REPO}badvpn/badvpn-udpgpw"
 chmod +x /usr/local/xdxl/badvpn-udpgpw
